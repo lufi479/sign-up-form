@@ -120,3 +120,11 @@ label {
     font-weight: bold;
 }
 
+input[type="password"].error{
+    border: 1px solid red;
+}
+
+.no-match{
+    font-size: 0.7rem;
+    color: red;
+}

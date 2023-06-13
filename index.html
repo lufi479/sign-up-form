@@ -42,17 +42,18 @@
                         </div>
                         <div>
                             <label for="phone">PHONE NUMBER</label>
-                            <input id="phone" name="phone" type="text" />
+                            <input id="phone" name="phone" type="text" pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Please enter a valid phone number, example: 123-456-7890"/>
                         </div>
                     </div>
                     <div class="form-row">
                         <div>
-                            <label class="error" for="pass">PASSWORD</label>
-                            <input id="pass" name="pass" type="password" />
+                            <label for="pass">PASSWORD</label>
+                            <input class="error" id="pass" name="pass" type="password" />
+                            <div class="no-match">* Passwords do not match</div>
                         </div>
                         <div>
-                            <label class="error" for="confirm-pass">CONFIRM PASSWORD</label>
-                            <input id="confirm-pass" name="confirm-pass" type="password" />
+                            <label for="confirm-pass">CONFIRM PASSWORD</label>
+                            <input class="error" id="confirm-pass" name="confirm-pass" type="password" />
                         </div>
                     </div>
                 </div>
